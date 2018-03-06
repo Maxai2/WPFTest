@@ -1,0 +1,72 @@
+﻿<Window x:Class="WPFTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Test" Height="382.586" Width="391.598">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<Label Grid.Column="0" Content="Standart" />
+			<Label Grid.Column="1" Content="Scientific"/>
+			<Label Grid.Column="2" Content="Converter"/>
+		</Grid>
+
+		<TextBox Grid.Row="1" Text="0" FlowDirection="RightToLeft" VerticalContentAlignment="Bottom"/>
+
+		<Grid Grid.Row="2">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="10"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="60"/>
+				<ColumnDefinition Width="10"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<StackPanel Grid.Row="1">
+				<Button Margin="5" Content="M"/>
+				<Button Margin="5" Content="±"/>
+				<Button Margin="5" Content="√"/>
+				<Button Margin="5" Content="%"/>
+				<Button Margin="5" Content="1/x"/>
+			</StackPanel>
+
+			<WrapPanel Grid.Row="1" Grid.Column="2">
+				<Button Margin="2" Content="CE"/>
+				<Button Margin="2" Content="C"/>
+				<Button Margin="2" Content="DEL"/>
+				<Button Margin="2" Content="/"/>
+				<Button Margin="2" Content="7"/>
+				<Button Margin="2" Content="8"/>
+				<Button Margin="2" Content="9"/>
+				<Button Margin="2" Content="*"/>
+				<Button Margin="2" Content="4"/>
+				<Button Margin="2" Content="5"/>
+				<Button Margin="2" Content="6"/>
+				<Button Margin="2" Content="-"/>
+				<Button Margin="2" Content="1"/>
+				<Button Margin="2" Content="2"/>
+				<Button Margin="2" Content="3"/>
+				<Button Margin="2" Content="+"/>
+				<Button Margin="2" Content="0"/>
+				<Button Margin="2" Content="."/>
+				<Button Margin="2" Content="="/>
+			</WrapPanel>
+
+		</Grid>
+
+	</Grid>
+
+</Window>
