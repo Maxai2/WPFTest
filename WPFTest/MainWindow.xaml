@@ -42,7 +42,7 @@
 				<Button Margin="5" Content="%"/>
 				<Button Margin="5" Content="1/x"/>
 			</StackPanel>
-
+ 
 			<WrapPanel Grid.Row="1" Grid.Column="2">
 				<Button Margin="2" Content="CE"/>
 				<Button Margin="2" Content="C"/>
